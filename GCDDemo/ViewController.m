@@ -15,7 +15,6 @@
 #define kDISPATCH_GLOBAL(globalQueueBlock)   dispatch_async(dispatch_get_global_queue(0, 0), globalQueueBlock);
 
 
-
 @interface ViewController ()
 
 @end
@@ -29,7 +28,7 @@
     
     /**
         简书地址:https://www.jianshu.com/u/e42bc3f050b7
-     
+        原文地址:https://www.jianshu.com/p/46500f070e9c
             最近面试, 看了一些GCD的文章, 于是决定自己写一下,增加自己的理解
      */
     /*dispatch_async(dispatch_get_global_queue(0, 0), ^{
@@ -40,22 +39,11 @@
     };
     };
 
-    作者：不死鸟fj
-    链接：https://www.jianshu.com/p/46500f070e9c
-    来源：简书
-    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。**/
-    
-    
+   
     /**
      最常用用的一个
      */
     //执行耗时的操作
-        
-         
-    
-    
-   
-    
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         for (int i = 0; i < 100; i++){
             NSLog(@"%d",i);
